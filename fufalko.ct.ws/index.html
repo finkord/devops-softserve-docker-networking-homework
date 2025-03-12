@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="/Favicon/Laptop32.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      type="text/javascript"
+      src="/Libraries/jquery-3.7.1.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Спочатку ховаємо всі вкладені елементи
+        $("#php_slaves").hide();
+        $("#php_course").hide();
+
+        // Функція для перемикання видимості розділів і закриття дочірніх елементів
+        function toggleSection(button, courses, allCourses, childSections) {
+          $(button).click(function (e) {
+            e.preventDefault();
+
+            // Закриваємо всі інші курси та їхні дочірні елементи
+            $(allCourses).not(courses).slideUp(200);
+            $(childSections).slideUp(200); // Закриваємо всі підрозділи лабораторних
+
+            // Перемикаємо видимість вибраних курсів
+            $(courses).slideToggle(200);
+          });
+        }
+
+        // Функція для відкривання/закривання підрозділів
+        function toggleSubSection(button, section) {
+          $(button).click(function (e) {
+            e.preventDefault();
+            $(section).slideToggle(200);
+          });
+        }
+
+        // Додаємо функціонал до основних кнопок
+        toggleSection(
+          "#second_year",
+          "#php_course",
+          "#php_course",
+          "#php_slaves"
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Головна сторінка</h1>
+    <h2>Студент: Володимир Фуфалько, група ІПЗ-24</h2>
+    <h2></h2>
+
+    <section class="parent" style="flex-direction: column">
+      <div class="parent">
+        <div>
+          <a id="second_year" style="background-color: #4f4557" href="#"
+            >Second Year</a
+          >
+        </div>
+      </div>
+
+      <div class="parent">
+        <div>
+          <a
+            id="php_course"
+            style="background-color: #3a333f"
+            href="/SecondYear/PHP_course/index.php"
+            >PHP Course</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

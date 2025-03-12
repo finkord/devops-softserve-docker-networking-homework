@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Dited";
+  src: url(/FirstYear/WebDesign_course/FONTS/Dited.otf);
+}
+
+body {
+  font-family: "Dited";
+  background-color: #393646;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0px;
+
+  /* justify-content: center; */
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+section {
+  background-color: #4f4557;
+  border-radius: 10px;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+  margin: 20px 0px;
+  margin-bottom: 0;
+
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+p {
+  /* font-family: Georgia; */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+a {
+  display: block;
+  /* color: #2c3e50; */
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  /* background-color: #ecf0f1; */
+  background-color: #6d5d6e;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #e74c3c;
+  color: #ffffff;
+  box-shadow: 0 0 10px 3px rgba(231, 76, 60, 0.7);
+}
+
+form {
+  background-color: #4f4557;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+
+form p {
+  margin: 6px;
+}
+
+form label {
+  font-size: 18px;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6d5d6e;
+  color: #ffffff;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  background-color: #77657a;
+}
+
+form input[type="submit"],
+form button {
+  background-color: #6d5d6e;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: rgb(60, 231, 97);
+  box-shadow: 0 0 10px 3px rgba(60, 231, 89, 0.7);
+}
+
+/* Стиль для радіокнопок та чекбоксів */
+form input[type="radio"],
+form input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ecf0f1;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+/* Стиль при виборі радіокнопки */
+form input[type="radio"]:checked {
+  background-color: rgb(60, 231, 97);
+  box-shadow: 0 0 5px rgba(60, 231, 89, 0.7);
+  border: 2px solid rgb(60, 231, 97);
+}
+
+/* Стиль для чекбоксів */
+form input[type="checkbox"] {
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+form input[type="checkbox"]:checked {
+  background-color: rgb(60, 231, 97);
+  box-shadow: 0 0 5px rgba(60, 231, 89, 0.7);
+  border: 2px solid rgb(60, 231, 97);
+}
+
+/* Стиль для селектів (дропдаун-списку) */
+form select {
+  background-color: #6d5d6e;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Стиль для списку множинного вибору */
+form select[multiple] {
+  height: 100px;
+  overflow: hidden;
+}
+
+/* Стиль для завантаження файлів */
+form input[type="file"] {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6d5d6e;
+  color: #ffffff;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* При наведенні */
+form input[type="file"]:hover {
+  background-color: #77657a;
+}
+
+/* Кастомний стиль для кнопки завантаження */
+form input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(60, 231, 97);
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* При наведенні на кнопку */
+form input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: rgb(45, 190, 80);
+  box-shadow: 0 0 10px 3px rgba(60, 231, 89, 0.7);
+}

@@ -1,0 +1,116 @@
+/* Загальні стилі для всього сайту */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Основні стилі для новин */
+.main-news,
+.categories {
+  margin-bottom: 20px;
+}
+
+.news-item,
+.category-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.news-item p {
+  color: #888;
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li a {
+  font-size: 1.1em;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Сторінка детальної новини */
+.news-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-content p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.news-content h2 {
+  margin-top: 0;
+}
+
+/* Кнопка для видалення новини */
+button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}

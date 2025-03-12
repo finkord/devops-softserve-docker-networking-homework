@@ -1,0 +1,100 @@
+body {
+  background-color: #2c3e50;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #ecf0f1;
+
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn_return {
+  display: block;
+  text-decoration: none;
+
+  border-radius: 10px;
+  color: white;
+
+  padding: 15px 20px;
+  margin: 20px;
+  min-width: 200px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #b31217 51%,
+    #e52d27 100%
+  );
+
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.btn_base {
+  border: 0px;
+  display: block;
+  text-decoration: none;
+
+  border-radius: 10px;
+  color: white;
+
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  min-width: 200px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+
+  background-image: linear-gradient(
+    to right,
+    #2041ea 0%,
+    #0d2889 51%,
+    #2041ea 100%
+  );
+
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.btn_return:hover,
+.btn_base:hover {
+  background-position: right center;
+  color: #ecf0f1;
+}
+
+.colorful-text {
+  font-weight: bold;
+  text-align: center;
+  animation: color-change 8s ease-in-out infinite;
+}
+@keyframes color-change {
+  0% {
+    color: #81a1c1;
+  } /* Світло-блакитний */
+  25% {
+    color: #88c0d0;
+  } /* Блакитний */
+  50% {
+    color: #5e81ac;
+  } /* Темно-блакитний */
+  75% {
+    color: #88c0d0;
+  } /* Блакитний */
+  100% {
+    color: #81a1c1;
+  } /* Світло-блакитний */
+}
